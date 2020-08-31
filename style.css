@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -17,7 +17,6 @@ body {
 
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -25,7 +24,6 @@ body {
     max-width: 100vw;
     height: 100vh;
 }
-
 
 #first {
     display: flex;
@@ -128,7 +126,8 @@ body {
     margin-top: 5%;
 }
 
-#readmore {
+/* 100 */
+#read_more {
     width: 35%;
     margin-top: 10%;
     display: flex;
@@ -136,11 +135,15 @@ body {
     justify-content: space-between;
 }
 
-
+/* 101 */
 #icon img {
     color: white;
 }
 
+/* 100 */
+#readmore_link { ... }
+
+/* 101 */
 #readmore a {
     font-family: Montserrat;
     font-style: SemiBold;
@@ -148,9 +151,11 @@ body {
     line-height: 22px;
     line-height: 100%;
     color: white;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
+
+/* 10 */
+.readmore_link {}
 
 #image {
     display: flex;
@@ -249,7 +254,6 @@ body {
 }
 
 #info h2 {
-    
     font-family: Lora;
     font-style: normal;
     font-weight: 100;
@@ -259,6 +263,11 @@ body {
     color: #FFFFFF;
 }
 
+@media (max-width:1440px) {
+    .container {
+        max-width: 970px;
+    }
+}
 
 @media (max-width:992px) {
     .container {
