@@ -14,7 +14,8 @@
 
 
 body {
-
+    display: flex;
+    position: relative;
 }
 
 
@@ -36,7 +37,7 @@ body {
     height: 8%; 
 }
 
-#interior {
+.interior {
     display: flex;
     margin-left: 5%;
     width: 30%;
@@ -44,12 +45,17 @@ body {
     align-items: center;
 }
 
-#interior a {
+.logo-effect:hover {
+    color: black;
+    background-color: #b4abab;
+}
+
+.logo-effect {
     text-decoration: none;
 }
 
-#interior a {
-    font-family: Crimson Pro;
+.logo-effect {
+    font-family: Crimson;
     font-style: normal;
     font-weight: 100;
     font-size: 14px;
@@ -61,12 +67,17 @@ body {
     text-align: center;
 }
 
-#menu li {
+.menu-effect:hover {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu li {
     list-style-type: none;
     margin: 0% 15%;
 }
 
-#menu a {
+.menu a {
     color: white;
     font-family: Montserrat;
     font-weight: 500;
@@ -74,7 +85,7 @@ body {
     text-decoration: none;
 }
 
-#menu {
+.menu {
     height: 100%;
     width: 60%;
     align-items: center;
@@ -84,7 +95,7 @@ body {
     margin-right: 7%;
 }
 
-#menu ul {
+.menu ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -260,6 +271,17 @@ body {
 }
 
 
+/* .initials {
+    display: block;
+    color: white;
+    position: absolute;
+}
+
+.initials__icon {
+    width: 25px;
+    height: auto;
+} */
+
 @media (max-width:992px) {
     .container {
         max-width: 750px;
@@ -323,7 +345,7 @@ body {
     }
     
     
-    #menu {
+    .menu {
         position: fixed;
         top: -100%;
         left: 0;
@@ -333,12 +355,12 @@ body {
         z-index: 4;
     }
     
-    #menu.active {
+    .menu.active {
         top: 0;
         transition: all 0.5s ease 0s;
     }
     
-    #menu ul {
+    .menu ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -367,7 +389,7 @@ body {
         padding: 0px 0px 50px 0px;
     }
     
-    #menu a {
+    .menu a {
         color: white;
         font-family: Montserrat;
         font-weight: 500;
