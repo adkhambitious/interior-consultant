@@ -25,6 +25,7 @@ body {
     background-color: black;
     max-width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
 
@@ -55,9 +56,8 @@ body {
 }
 
 .logo-effect {
-    font-family: Crimson;
-    font-style: normal;
-    font-weight: 100;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
@@ -79,7 +79,7 @@ body {
 
 .menu a {
     color: white;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
@@ -119,22 +119,19 @@ body {
 }
 
 #title h1 {
-    font-family: Lora;
+    font-family: 'Lora', serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 48px;
     line-height: 61px;
     color: #FFFFFF;
 }
 
 #article p {
-    
-    font-family: Montserrat;
-    font-style: normal;
+    font-family: 'Montserrat', serif;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    
     color: #FFFFFF;
     margin-top: 5%;
 }
@@ -153,8 +150,8 @@ body {
 }
 
 #readmore a {
-    font-family: Montserrat;
-    font-style: SemiBold;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     line-height: 100%;
@@ -169,8 +166,6 @@ body {
     background-color: thistle;
     margin-top: 5%;
     margin-left: 17.5%;
-    /* width: 43vw;
-    height: 32vw; */
     width: 40vw;
     height: 30.1227vw;
     z-index: 1;   
@@ -232,9 +227,9 @@ body {
 
 
 #namestatus h3 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', serif;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 11px;
     line-height: 17px;
     color: white;
@@ -244,9 +239,9 @@ body {
 
 #namestatus h4 {
     
-    font-family: Montserrat;
+    font-family: 'Montserrat', serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 9px;
     line-height: 15px;
     margin-top: 3%;
@@ -260,38 +255,52 @@ body {
 }
 
 #info h2 {
-    
-    font-family: Lora;
+    font-family: 'Lora', serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 24px;
     line-height: 31px;
     margin-left: 2%;
     color: #FFFFFF;
 }
 
-
-/* .initials {
-    display: block;
-    color: white;
+.third {
+    width: 195px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    align-content: center;
+    justify-content: center;
+    margin-left: 43%;
+    margin-top: 40%;
 }
+
+.initials {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: flex;
+    color: white;
+    height: 18px;
+    text-decoration: none;
+    font-size: 14px;
+}    
 
 .initials__icon {
-    width: 25px;
+    width: 20px;
     height: auto;
-} */
-
-@media (max-width:992px) {
-    .container {
-        max-width: 750px;
-    }
+    margin-left: 10px;
 }
 
-@media (max-width:767px) {
-    .container {
-        max-width: none;
-    }
+.devchallenges {
+    display: flex;
+    height: 20px;
+    width: 120px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 
@@ -300,7 +309,6 @@ body {
 .burger_menu {
     display: none;
 }
-
 
 @media (max-width:767px) {
     
@@ -391,7 +399,7 @@ body {
     
     .menu a {
         color: white;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 26px;
         text-decoration: none;
@@ -437,7 +445,7 @@ body {
     }
     
     #title h1 {
-        font-family: Lora;
+        font-family: 'Lora', serif;
         font-style: normal;
         font-weight: normal;
         font-size: 32px;
@@ -446,13 +454,11 @@ body {
     }
     
     #article p {
-        
-        font-family: Montserrat;
+        font-family: 'Montserrat', serif;
         font-style: normal;
         font-weight: 100;
         font-size: 14px;
         line-height: 17px;
-        
         color: #FFFFFF;
         margin-top: 5%;
     }
@@ -476,8 +482,9 @@ body {
     }
     
     #aboutDesigner {
-        width: 80%;
-        height: 30%;
+        width: 70%;
+        height: 25%;
+        bottom: 3%;
     }
     
     #union {
@@ -539,4 +546,6 @@ body {
     #interior a {
         font-size: 10px;
     }
+    
+    
 }
